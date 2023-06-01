@@ -1,1 +1,0 @@
-import{u as r,j as e,F as a}from"./index.b4996719.js";const t=({children:s})=>{const[n,d]=r();return e(a,{children:!n&&e("div",{className:"w-full overflow-hidden",children:s})})};export{t as default};
