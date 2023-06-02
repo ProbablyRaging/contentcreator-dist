@@ -1,1 +1,0 @@
-import{j as e}from"./index.fe1cf253.js";const o=()=>e("section",{className:"flex-col m-10",children:e("p",{className:"font-poppins font-normal text-center text-[10px] leading-[27px] text-gray-500",children:"Copyright \u24B8 2023 CreatorDiscord. All Rights Reserved."})});export{o as default};
