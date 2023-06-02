@@ -1,0 +1,1 @@
+import{r as c}from"./index.fe1cf253.js";const f=t=>{const[e,s]=c.exports.useState(()=>typeof t=="function"?t():t),r=c.exports.useRef(t);return c.exports.useEffect(()=>{r.current=e},[e]),[e,o=>{const n=typeof o=="function"?o(r.current):o;r.current=n,s(n)},r]};export{f as t};
