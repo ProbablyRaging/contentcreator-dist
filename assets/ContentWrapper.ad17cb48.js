@@ -1,0 +1,1 @@
+import{j as s,F as t,s as a}from"./index.9ffaa8cc.js";const l=({children:e})=>s(t,{children:s("div",{className:`${a.flexStart}`,children:s("div",{className:`${a.boxWidth}`,children:e})})});export{l as default};
