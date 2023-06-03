@@ -29,10 +29,25 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://cdn.tiny.cloud/1/sn859udbwuko5zl0h8tp6q4dv6xil8zqzr15o6cs04pnkry0/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        const useDarkMode = localStorage.getItem('darkMode');
+        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (useDarkMode && useDarkMode === 'true') {
+            document.documentElement.style.background = '#121212';
+        } else if (useDarkMode && useDarkMode === 'false') {
+            document.documentElement.style.background = '#fff';
+        } else {
+            if (prefersDarkMode) {
+                document.documentElement.style.background = '#121212';
+            } else {
+                document.documentElement.style.background = '#fff';
+            }
+        }
+    </script>
 
     <title>CreatorDiscord - A Discord server for content creators</title>
-  <script type="module" crossorigin src="/assets/index.a6e2c75f.js"></script>
-  <link rel="stylesheet" href="/assets/index.244f17fe.css">
+  <script type="module" crossorigin src="/assets/index.936420d1.js"></script>
+  <link rel="stylesheet" href="/assets/index.a707653d.css">
 </head>
 
 <body>
