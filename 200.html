@@ -36,6 +36,25 @@
 </head>
 
 <body>
+    <script>
+        const useDarkMode = localStorage.getItem('darkMode');
+        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (useDarkMode && useDarkMode === 'true') {
+            document.documentElement.style.background = '#121212';
+            document.body.style.background = '#121212';
+        } else if (useDarkMode && useDarkMode === 'false') {
+            document.documentElement.style.background = '#fff';
+            document.body.style.background = '#fff';
+        } else {
+            if (prefersDarkMode) {
+                document.documentElement.style.background = '#121212';
+                document.body.style.background = '#121212';
+            } else {
+                document.documentElement.style.background = '#fff';
+                document.body.style.background = '#fff';
+            }
+        }
+    </script>
     <div id="app"></div>
     
     
