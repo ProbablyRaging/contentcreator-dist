@@ -2,6 +2,25 @@
 <html lang="en">
 
 <head>
+    <script>
+        const useDarkMode = localStorage.getItem('darkMode');
+        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (useDarkMode && useDarkMode === 'true') {
+            document.documentElement.style.backgroundColor = 'var(--nextui-colors-background)';
+            // document.body.style.backgroundColor = 'var(--nextui-colors-background';
+        } else if (useDarkMode && useDarkMode === 'false') {
+            document.documentElement.style.backgroundColor = 'var(--nextui-colors-background';
+            // document.body.stylebackgroundColor = 'var(--nextui-colors-background';
+        } else {
+            if (prefersDarkMode) {
+                document.documentElement.style.backgroundColor = 'var(--nextui-colors-background';
+                // document.body.style.backgroundColor = 'var(--nextui-colors-background';
+            } else {
+                document.documentElement.style.backgroundColor = 'var(--nextui-colors-background';
+                // document.body.style.backgroundColor = 'var(--nextui-colors-background';
+            }
+        }
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui" />
     <meta name="theme-color" content="#1a1e23" />
@@ -36,25 +55,6 @@
 </head>
 
 <body>
-    <script>
-        const useDarkMode = localStorage.getItem('darkMode');
-        const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (useDarkMode && useDarkMode === 'true') {
-            document.documentElement.style.backgroundColor = 'var(--nextui-colors-background)';
-            document.body.style.backgroundColor = 'var(--nextui-colors-background';
-        } else if (useDarkMode && useDarkMode === 'false') {
-            document.documentElement.style.backgroundColor = 'var(--nextui-colors-background';
-            document.body.stylebackgroundColor = 'var(--nextui-colors-background';
-        } else {
-            if (prefersDarkMode) {
-                document.documentElement.style.backgroundColor = 'var(--nextui-colors-background';
-                document.body.style.backgroundColor = 'var(--nextui-colors-background';
-            } else {
-                document.documentElement.style.backgroundColor = 'var(--nextui-colors-background';
-                document.body.style.backgroundColor = 'var(--nextui-colors-background';
-            }
-        }
-    </script>
     <div id="app"></div>
     
     
