@@ -1,0 +1,1 @@
+import{j as e,s as i,E as a}from"./index.e5f6f327.js";const m=()=>e("div",{className:`${i.flexCenter} flex-wrap w-full my-4`,children:a.map(s=>e("div",{className:`flex-1 ${i.flexCenter} min-w-[192px] sm:min-w-[0] m-5`,children:e("img",{id:s.id,src:s.logo,alt:s.id,width:"52",height:"52",className:"w-[52px] min-w-[42px] object-contain"})},s.id))});export{m as default};

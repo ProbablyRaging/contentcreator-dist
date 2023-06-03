@@ -1,0 +1,1 @@
+import{j as e,F as r}from"./index.e5f6f327.js";const m=()=>e(r,{children:e("div",{className:"fixed rounded-full bg-gradient z-[0] w-[10rem] h-[48rem] rotate-[54deg] top-[3rem] right-[70rem] sm:top-[10rem] sm:right-[9rem]"})});export{m as default};
